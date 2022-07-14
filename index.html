@@ -5,11 +5,13 @@
 <!-- Model by LeoPoly: https://clara.io/view/7396753f-e196-4706-9507-13919f31be6c# (OBJ format) -->
 <!-- Model converted using: https://cesiumjs.org/convertmodel.html (all options unchecked) -->
 <a-scene>
-  <a-entity camera look-controls wasd-controls="acceleration:100" position="0 1.6 0"></a-entity>
+<a-entity id="rig" position="25 10 0">
+  <a-entity id="camera" camera look-controls></a-entity>
+</a-entity>
   <a-assets>
     <a-asset-item id="cw-sloped" src="UntitledScene.gltf" ></a-asset-item> 
   </a-assets>
-  <a-gltf-model src="#cw-sloped" position="0 0 0"></a-gltf-model>
+  <a-gltf-model src="#cw-sloped" position="0 0 0" material="color: gray"></a-gltf-model>
   
   <a-entity light="type: directional; color: #CCCCCC; intensity: 0.6" position="-0.5 1 1"></a-entity>
 </a-scene>
